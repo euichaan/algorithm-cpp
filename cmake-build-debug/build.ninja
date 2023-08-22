@@ -64,6 +64,37 @@ build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
 build edit_cache: phony CMakeFiles/edit_cache.util
 
 # =============================================================================
+# Object build statements for EXECUTABLE target typedef
+
+
+#############################################
+# Order-only phony target for typedef
+
+build cmake_object_order_depends_target_typedef: phony || CMakeFiles/typedef.dir
+
+build CMakeFiles/typedef.dir/bigstone/basic/typedef.cpp.o: CXX_COMPILER__typedef_Debug /Users/hwang-uichan/CLionProjects/algorithm/bigstone/basic/typedef.cpp || cmake_object_order_depends_target_typedef
+  DEP_FILE = CMakeFiles/typedef.dir/bigstone/basic/typedef.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/typedef.dir
+  OBJECT_FILE_DIR = CMakeFiles/typedef.dir/bigstone/basic
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target typedef
+
+
+#############################################
+# Link the executable typedef
+
+build typedef: CXX_EXECUTABLE_LINKER__typedef_Debug CMakeFiles/typedef.dir/bigstone/basic/typedef.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/typedef.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = typedef
+  TARGET_PDB = typedef.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target split
 
 
@@ -384,7 +415,7 @@ build algorithm: CXX_EXECUTABLE_LINKER__algorithm_Debug CMakeFiles/algorithm.dir
 #############################################
 # Folder: /Users/hwang-uichan/CLionProjects/algorithm/cmake-build-debug
 
-build all: phony split recursion permutationwithrecursion permutation programmers primenumber factorize combinationforloop combination algorithm
+build all: phony typedef split recursion permutationwithrecursion permutation programmers primenumber factorize combinationforloop combination algorithm
 
 # =============================================================================
 # Built-in targets
