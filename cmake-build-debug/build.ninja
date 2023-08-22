@@ -64,6 +64,37 @@ build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
 build edit_cache: phony CMakeFiles/edit_cache.util
 
 # =============================================================================
+# Object build statements for EXECUTABLE target stl
+
+
+#############################################
+# Order-only phony target for stl
+
+build cmake_object_order_depends_target_stl: phony || CMakeFiles/stl.dir
+
+build CMakeFiles/stl.dir/bigstone/basic/stl.cpp.o: CXX_COMPILER__stl_Debug /Users/hwang-uichan/CLionProjects/algorithm/bigstone/basic/stl.cpp || cmake_object_order_depends_target_stl
+  DEP_FILE = CMakeFiles/stl.dir/bigstone/basic/stl.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/stl.dir
+  OBJECT_FILE_DIR = CMakeFiles/stl.dir/bigstone/basic
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target stl
+
+
+#############################################
+# Link the executable stl
+
+build stl: CXX_EXECUTABLE_LINKER__stl_Debug CMakeFiles/stl.dir/bigstone/basic/stl.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/stl.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = stl
+  TARGET_PDB = stl.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target typedef
 
 
@@ -415,7 +446,7 @@ build algorithm: CXX_EXECUTABLE_LINKER__algorithm_Debug CMakeFiles/algorithm.dir
 #############################################
 # Folder: /Users/hwang-uichan/CLionProjects/algorithm/cmake-build-debug
 
-build all: phony typedef split recursion permutationwithrecursion permutation programmers primenumber factorize combinationforloop combination algorithm
+build all: phony stl typedef split recursion permutationwithrecursion permutation programmers primenumber factorize combinationforloop combination algorithm
 
 # =============================================================================
 # Built-in targets
