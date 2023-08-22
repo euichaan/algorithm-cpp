@@ -37,3 +37,6 @@ Thumbs.db
 # Custom user-defined directories
 /bin/
 /build/
+
+# Ignore JSON files
+*.json
