@@ -1,0 +1,39 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# CMake build directory
+cmake-build-*/
+
+# Clion workspace files
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Custom user-defined directories
+/bin/
+/build/
