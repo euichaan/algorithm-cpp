@@ -41,3 +41,10 @@ Thumbs.db
 
 # Ignore JSON files
 *.json
+
+# txt files
+*.txt
+
+# practice cpp files
+programmers.cpp
+algorithm.cpp
